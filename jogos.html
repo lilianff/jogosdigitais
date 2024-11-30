@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Acessível - Desafio de Obstáculos</title>
+  <link rel="stylesheet" href="jogos.css">
+</head>
+<body>
+
+  <h1>Jogo Acessível - Desafio de Obstáculos</h1>
+  <button class="button" onclick="startGame()">Iniciar Jogo</button>
+  <div id="gameArea">
+    <div id="subtitles"></div>
+    <div class="player" id="player"></div>
+  </div>
+
+  <div id="settings">
+    <h2>Configurações de Acessibilidade</h2>
+    <label for="volumeSlider">Volume do Áudio:</label>
+    <input type="range" id="volumeSlider" class="slider" min="0" max="1" step="0.1" value="1">
+    <br>
+    <label for="fontSizeSlider">Tamanho da Legenda:</label>
+    <input type="range" id="fontSizeSlider" class="slider" min="10" max="30" step="1" value="16">
+  </div>
+
+  <div id="info">Use as teclas de seta para mover o jogador e evitar os obstáculos!</div>
+
+  <script src="jogos.js"></script>
+</body>
+</html>

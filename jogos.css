@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #gameArea {
+    width: 80%;
+    height: 400px;
+    background-color: #e3e3e3;
+    border: 2px solid #ccc;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .player {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .obstacle {
+    width: 40px;
+    height: 40px;
+    background-color: #ff5733;
+    position: absolute;
+    border-radius: 5px;
+    animation: moveObstacle 2s infinite linear;
+  }
+  
+  @keyframes moveObstacle {
+    0% { top: -40px; }
+    100% { top: 100%; }
+  }
+  
+  #subtitles {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  #settings {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .slider {
+    width: 200px;
+  }
+  
+  #info {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
